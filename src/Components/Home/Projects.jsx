@@ -5,13 +5,13 @@ import arkfa from "./Icons/arkfa-logo.png";
 export const Projects = () => {
 const projects = [
   {
-    logo: "/src/Components/Home/Icons/ite.svg",
+    logo: "src/Components/Home/Icons/ite.svg",
     title: "Infinity Techno Engineering",
     desc: "A business website designed for an industrial service provider specializing in automation systems, hydraulic and pneumatic actuator maintenance, and electrical and mechanical repairs. Built with responsive design and clear service segmentation for user-friendly navigation.",
     link: "https://md0516.github.io/infinity-techno-engineering/",
   },
   {
-    logo: "/src/Components/Home/Icons/arkfa-logo.png",
+    logo: "src/Components/Home/Icons/arkfa-logo.png",
     title: "ARKFA",
     desc: "A responsive and modern web portfolio built with Next.js and deployed on Vercel. Showcases clean UI design and optimized performance, serving as a demonstration of front-end development skills.",
     link: "https://arkfawebsite.vercel.app/",
