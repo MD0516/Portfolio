@@ -10,7 +10,7 @@ function HeaderContent({name, desc}) {
               {desc}
           </p>
           <div>
-            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Resume.pdf" download={"Resume.pdf"} >
               <button className="btn btn-white text-white fs-5  custom-font" >              
                 <span> Download Resume </span><i className="bi bi-download "></i>
               </button>
