@@ -1,6 +1,6 @@
 import React from 'react'
 import menu from './Menu.svg'
-import close from './Close.svg'
+import close from './close.svg'
 import {useState , useEffect, useRef} from 'react'
 import { Link } from "react-router-dom";
 
