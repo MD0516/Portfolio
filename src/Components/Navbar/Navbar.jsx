@@ -46,7 +46,7 @@ function Navbar() {
                   <div className='d-flex flex-row '>
                    
                     <ul className='list-unstyled text-decoration-none'>
-                      <li><Link to="/home" className='text-decoration-none text-black'><h2 className='display-2'>Home</h2></Link></li>
+                      <li><Link to="/" className='text-decoration-none text-black'><h2 className='display-2'>Home</h2></Link></li>
                       <li><Link to="/projects"  className='text-decoration-none text-black'><h2 className='display-2'>Projects</h2></Link></li>
                       <li><Link to="/about" className='text-decoration-none text-black'><h2 className='display-2'>About</h2></Link></li>
                       <li><Link to="/contact-me" className='text-decoration-none text-black'><h2 className='display-2'>Contact Me</h2></Link></li>

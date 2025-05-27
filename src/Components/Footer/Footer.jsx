@@ -10,7 +10,7 @@ function Footer() {
         <div className='bg-black d-flex flex-column flex-md-row justify-content-around align-items-center lh-base text-center ' style={{height: '50vh'}}>
             
             <div className='d-flex flex-column flex-md-row justify-content-center align-items-center gap-5 p-3 custom-letter-spacing'>
-                <h2><Link to="/home" className='text-decoration-none text-white fs-3'>HOME</Link></h2>
+                <h2><Link to="/" className='text-decoration-none text-white fs-3'>HOME</Link></h2>
                 <h2><Link to="/projects" className='text-decoration-none text-white fs-3'>PROJECTS</Link></h2>
                 <h2><Link to="/about" className='text-decoration-none text-white fs-3'>ABOUT ME</Link></h2>
                 <h2><Link to="/contact-me" className='text-decoration-none text-white fs-3'>CONTACT</Link></h2>
