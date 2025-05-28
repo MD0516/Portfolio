@@ -20,7 +20,7 @@ const AboutMe = () => {
                 continuous learning and hands-on projects.
               </p>
               <div className='col-md-3 align-items-center d-flex justify-content-center'>
-                <Link to={'/about'} className="btn fs-3 d-flex justify-content-center align-items-center custom-font">
+                <Link to={'/about'} className="btn fs-3 d-flex justify-content-center align-items-center popup-font fw-bold">
                   Know More <i className="bi bi-arrow-right-square ms-3"></i>                 
                 </Link>
               </div>

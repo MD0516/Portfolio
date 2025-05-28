@@ -29,7 +29,7 @@ const projects = [
                 <div key={i} className="col-md-9 rounded-3 shadow-lg">
                   <div className="d-flex flex-row align-items-center gap-3 p-3">
                     <img src={item.logo} alt="img" style={{ width: "100px" }} />
-                    <h3 className="title">{item.title}</h3>
+                    <h3 className="title popup-font fw-bold">{item.title}</h3>
                   </div>
                   <div>
                     <p className="fs-5 fw-lighter lh-base custom-font p-3">
@@ -39,7 +39,7 @@ const projects = [
                       href={item.link}
                       target="blank"
                       rel="noopener noreferrer"
-                      className="btn fs-5 custom-font p-3"
+                      className="btn fs-5 popup-font fw-bold p-3"
                     >
                       Click Here <i className="bi bi-arrow-right"></i>
                     </a>
