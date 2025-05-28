@@ -6,7 +6,7 @@ function HeaderContent({name, desc}) {
           <h1 className='text-white fw-bolder  text-center display-1 custom-letter-spacing'> 
               {name}
           </h1>
-          <p className='text-white text-center display-6 custom-letter-spacing'>
+          <p className='text-white text-center display-6 popup-font fw-bolder'>
               {desc}
           </p>
           <div>

@@ -65,10 +65,6 @@ textarea:focus{
   box-shadow: rgba(0, 0, 0, 0.6) 0px 25px 20px -20px;
 }
 
-.row-1 label{
-  letter-spacing: 4px;
-}
-
 .download-btn{
   position: relative;
   top: 50%;
@@ -88,4 +84,68 @@ textarea:focus{
   top: 0 !important;
   opacity: 1;
   visibility: visible;
+}
+.glass-effect{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.3px);
+-webkit-backdrop-filter: blur(9.3px);
+border: 1px solid rgba(255, 255, 255, 1);
+}
+.custom-center{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9); ;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgba(0, 0, 0, 0.52) 1px solid;
+  border-radius: 15px;  
+  transition: all 0.3s ease;
+}
+.popup-open{
+  overflow: hidden;
+  background: rgba(0, 0, 0,0.4);
+}
+.static-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent */
+  z-index: 9998;
+}
+.popup-font{
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.static-bg.show{
+  opacity: 1;
+}
+
+.custom-center.show{
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+button{
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+.row textarea{
+  height: 44px;
+  scrollbar-width: none;
+}
+
+.contact-me hr{
+  width: 80vw;
+  height: 1px;
+  background-color: black;
+  border: none;
+  margin: 20px auto;
 }

@@ -22,7 +22,7 @@ const projects = [
     <div>
       <div className="d-flex flex-column justify-content-center align-items-center">
         <div className="bg-white m-5 p-3 container w-100 w-md-50 rounded-3 shadow-lg">
-          <h3 className="display-3 text-center">PROJECTS</h3>
+          <h3 className="display-5 text-center popup-font fw-bolder">PROJECTS</h3>
           <div className="container m-md-5 p-md-3  ">
             <div className="row gap-5 align-items-center justify-content-center">
               {projects.map((item, i) => (

@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div>
       <div className="d-flex flex-column justify-content-center align-items-center ">
         <div className="bg-white container m-5 p-3 w-100 w-md-50 rounded-3 shadow-lg">
-          <h3 className="display-3 text-center">ABOUT ME</h3>
+          <h3 className="display-5 text-center popup-font fw-bolder">ABOUT ME</h3>
           <div className="container">
             <div className="row">
               <p className="fs-4 fw-lighter lh-base col-12 col-md-9 custom-font">

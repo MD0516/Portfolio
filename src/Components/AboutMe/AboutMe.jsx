@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center ">
         <div className="bg-white m-5 p-3 container w-100 w-md-50 rounded-3 shadow-lg">
-            <h3 className="display-4 fs-1 m-4">MY BACKGROUND</h3>
+            <h3 className="display-4 fs-1 m-4 popup-font fw-bolder">MY BACKGROUND</h3>
             <div className="container">
                 <div className="row">
                     <p className='fs-4 fw-lighter p-3 lh-lg custom-font'>
@@ -21,7 +21,7 @@ const AboutMe = () => {
             </div>
         </div>
         <div className="bg-white m-5 p-3 container w-100 w-md-50 rounded-3 shadow-lg">
-            <h3 className="display-4 fs-1 m-4">MY HOBBIES</h3>
+            <h3 className="display-4 fs-1 m-4 popup-font fw-bolder">MY HOBBIES</h3>
             <div className="container">
                 <div className="row">
                     <p className='fs-4 fw-lighter p-3 lh-lg custom-font'>
@@ -38,7 +38,7 @@ const AboutMe = () => {
 
         <div className='my-5'>
             <Link to={"/contact-me"} className="text-decoration-none text-black">
-              <button className="custom-btn fs-3 custom-letter-spacing">              
+              <button className="custom-btn fs-3 popup-font fw-bold">              
                   Contact Me <i className="bi bi-arrow-right-square"></i>
               </button>
             </Link>

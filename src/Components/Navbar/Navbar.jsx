@@ -30,7 +30,7 @@ function Navbar() {
   
   return (
     <div className={`bg-black d-flex flex-row w-100 justify-content-between ${isSticky ? isSticky : ''}`}>
-        <Link to="/" className='text-white fs-1 text-decoration-none px-5 custom-letter-spacing' > PF </Link>
+        <Link to="/" className='text-white fs-1 text-decoration-none p-3 popup-font fw-bolder' > PF </Link>
         <nav className='navbar navbar-dark p-3'>
             <button className='navbar-toggler' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop " aria-controls="offcanvasTop" >
                 <img src={menu} />
@@ -45,11 +45,11 @@ function Navbar() {
                 <div className='d-flex flex-row align-items-center justify-content-center'> 
                   <div className='d-flex flex-row '>
                    
-                    <ul className='list-unstyled text-decoration-none'>
-                      <li><Link to="/" className='text-decoration-none text-black'><h2 className='display-2'>Home</h2></Link></li>
-                      <li><Link to="/projects"  className='text-decoration-none text-black'><h2 className='display-2'>Projects</h2></Link></li>
-                      <li><Link to="/about" className='text-decoration-none text-black'><h2 className='display-2'>About</h2></Link></li>
-                      <li><Link to="/contact-me" className='text-decoration-none text-black'><h2 className='display-2'>Contact Me</h2></Link></li>
+                    <ul className='list-unstyled text-decoration-none '>
+                      <li><Link to="/" className='text-decoration-none text-black'><h2 className='display-2 popup-font fw-bolder'>Home</h2></Link></li>
+                      <li><Link to="/projects"  className='text-decoration-none text-black'><h2 className='display-2 popup-font fw-bolder'>Projects</h2></Link></li>
+                      <li><Link to="/about" className='text-decoration-none text-black'><h2 className='display-2 popup-font fw-bolder'>About</h2></Link></li>
+                      <li><Link to="/contact-me" className='text-decoration-none text-black'><h2 className='display-2 popup-font fw-bolder'>Contact Me</h2></Link></li>
                     </ul>
                   </div>                  
                 </div>

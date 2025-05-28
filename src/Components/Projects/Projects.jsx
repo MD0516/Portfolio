@@ -22,18 +22,18 @@ const Projects = () => {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center ">
         <div className="bg-white container m-5 p-3 w-100 w-md-75 rounded-3 shadow-lg">
-            <h3 className="display-3 text-center">PROJECTS</h3>
+            <h3 className="display-4 text-center popup-font fw-bolder">PROJECTS</h3>
             <div className='row gap-5 align-items-center justify-content-center m-md-5 p-md-3'>
                 {
                     projects.map((item, i) => (
                         <div key={i} className='col-md-5 rounded-3 shadow-lg mb-4'>
                             <div className='d-flex flex-row align-items-center gap-3 p-3'>
                                 <img src={item.logo} alt="img" style={{ width: "100px" }} />
-                                <h3 className='title'>{item.title}</h3>
+                                <h3 className='popup-font fw-bolder'>{item.title}</h3>
                             </div>
                             <div>
                                 <p className='fs-5 fw-lighter lh-base custom-font p-3'>{item.desc}</p>
-                                <a href={item.link} target="_blank" rel="noopener noreferrer" className='btn fs-5 custom-font p-3'>Click Here <i className="bi bi-arrow-right"></i></a>
+                                <a href={item.link} target="_blank" rel="noopener noreferrer" className='btn fs-5 popup-font fw-bolder p-3'>Click Here <i className="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     ))
