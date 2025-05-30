@@ -7,23 +7,31 @@ import ProjectPage from '../Pages/ProjectPage';
 
 export const router = createBrowserRouter([
     {
+    index: true,
+    element: <Navigate to="/home" replace />
+    },
+    {
         path : '/',
         element : <Layout></Layout>,
         children : [
             {
-                path : '/home',
+                index : true,
+                element : <Navigate to="/home" replace />
+            },
+            {
+                path : 'home',
                 element : <HomePage></HomePage>
             },
             {
-                path : '/contact-me',
+                path : 'contact-me',
                 element : <ContactPage></ContactPage>
             },
             {
-                path : '/about',
+                path : 'about',
                 element : <AboutPage></AboutPage>
             },
             {
-                path : '/projects',
+                path : 'projects',
                 element : <ProjectPage></ProjectPage>
             }
         ]
