@@ -40,6 +40,7 @@ function Navbar() {
       }
     };
 
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -59,7 +60,7 @@ function Navbar() {
         </div>
       { isMobile && 
           <nav className='navbar navbar-dark p-3 mobile-nav'  >
-              <button className='navbar-toggler ' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop " aria-controls="offcanvasTop" >
+              <button className='navbar-toggler ' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" >
                   <img src={menu} />
               </button>
 
