@@ -11,7 +11,7 @@ function HeaderContent({name, desc}) {
           </p>
           <div>
             <a href="/Resume.pdf" download={"Resume.pdf"} >
-              <button className="btn btn-white text-white fs-5  custom-font" >              
+              <button className="btn btn-white text-white fs-5  custom-font custom-hover" >              
                 <span> Download Resume </span><i className="bi bi-download "></i>
               </button>
             </a>

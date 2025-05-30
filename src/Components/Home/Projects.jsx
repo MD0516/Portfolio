@@ -39,7 +39,7 @@ const projects = [
                       href={item.link}
                       target="blank"
                       rel="noopener noreferrer"
-                      className="btn fs-5 popup-font fw-bold p-3"
+                      className="btn fs-5 popup-font fw-bold p-3 custom-hover"
                     >
                       Click Here <i className="bi bi-arrow-right"></i>
                     </a>

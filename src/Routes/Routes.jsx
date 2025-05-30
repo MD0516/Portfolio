@@ -7,10 +7,6 @@ import ProjectPage from '../Pages/ProjectPage';
 
 export const router = createBrowserRouter([
     {
-        path: '/',
-        element: <Navigate to="/home" />
-    },
-    {
         path : '/',
         element : <Layout></Layout>,
         children : [

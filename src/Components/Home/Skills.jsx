@@ -4,9 +4,9 @@ import vs from "./Icons/vscode.svg";
 
 const Skills = () => {
   return (
-    <div>
-      <div className="d-flex flex-column justify-content-center align-items-center">
-        <div className="bg-white m-5 p-3 container w-100 w-md-50 rounded-3 shadow-lg">
+    <div >
+      <div className="d-flex flex-column justify-content-center align-items-center" >
+        <div className="bg-white m-5 p-3 container w-100 w-md-75 rounded-3 shadow-lg">
           <h3 className="display-5 text-center popup-font fw-bolder">MY SKILLS</h3>
           <div>
             <ul className="list-unstyled d-flex flex-row justify-content-center align-items-center flex-wrap gap-5 my-5">

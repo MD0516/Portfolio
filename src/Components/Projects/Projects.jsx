@@ -33,7 +33,7 @@ const Projects = () => {
                             </div>
                             <div>
                                 <p className='fs-5 fw-lighter lh-base custom-font p-3'>{item.desc}</p>
-                                <a href={item.link} target="_blank" rel="noopener noreferrer" className='btn fs-5 popup-font fw-bolder p-3'>Click Here <i className="bi bi-arrow-right"></i></a>
+                                <a href={item.link} target="_blank" rel="noopener noreferrer" className='btn fs-5 popup-font fw-bolder p-3 custom-hover'>Click Here <i className="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     ))

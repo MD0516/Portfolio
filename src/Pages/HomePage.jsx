@@ -18,11 +18,11 @@ function HomePage () {
         <div className="d-flex flex-column justify-content-center align-items-center ">
             <div className="bg-white m-5 p-3 container w-100 w-md-50 w-lg-50 rounded-3 shadow-lg d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
             <Link to={"/projects"} className="text-decoration-none text-black">
-              <button className="custom-btn fs-3 fw-bold">
+              <button className="custom-btn fs-3 fw-bold custom-hover">
                   All Projects <i className="bi bi-arrow-right-square"></i>{" "}
               </button>
             </Link>
-            <Link to={"/contact-me"} className="text-decoration-none text-black">
+            <Link to={"/contact-me"} className="text-decoration-none text-black custom-hover">
               <button className="custom-btn fs-3 fw-bold">              
                   Contact Me <i className="bi bi-arrow-right-square"></i>
               </button>
