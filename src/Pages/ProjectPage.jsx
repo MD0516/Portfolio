@@ -5,7 +5,7 @@ import Projects from '../Components/Projects/Projects'
 const ProjectPage = () => {
   return (
     <div>
-        <HeaderContent name={"Projects"} desc={"A Showcase of What I Build and Believe In"}/>
+        <HeaderContent name={"Projects"} desc={`A Showcase of What I \n Build and Believe In`}/>
         <Projects />
     </div>
   )

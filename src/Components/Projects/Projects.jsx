@@ -26,7 +26,7 @@ const Projects = () => {
             <div className='row gap-5 align-items-center justify-content-center m-md-5 p-md-3'>
                 {
                     projects.map((item, i) => (
-                        <div key={i} className='col-md-5 rounded-3 shadow-lg mb-4'>
+                        <div key={i} className='col-md-5 rounded-3 shadow-lg mb-4 project-card'>
                             <div className='d-flex flex-row align-items-center gap-3 p-3'>
                                 <img src={item.logo} alt="img" style={{ width: "100px" }} />
                                 <h3 className='popup-font fw-bolder'>{item.title}</h3>

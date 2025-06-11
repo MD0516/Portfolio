@@ -7,7 +7,7 @@ const AboutPage = () => {
     <div>
         <HeaderContent 
             name="About Me"
-            desc="Learn more about my background, skills, and interests."
+            desc={`Learn more about my \n background, skills, and interests`}
         />
         <AboutMe />
     </div>

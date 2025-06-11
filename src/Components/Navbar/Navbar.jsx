@@ -5,9 +5,10 @@ import {useState , useEffect, useRef} from 'react'
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [isSticky, setIsSticky] = useState();
+  const [isSticky, setIsSticky] = useState('');
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const offCanvasRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,6 +46,13 @@ function Navbar() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   
+  const closeCanvas = () => {
+    if (offCanvasRef.current) {
+      const bsOffCanvas = bootstrap.Offcanvas.getInstance(offCanvasRef.current);
+      if (bsOffCanvas) bsOffCanvas.hide();
+    }
+  }
+
   return (
     <div className={`bg-black d-flex flex-row w-100 justify-content-between align-items-center ${isSticky ? isSticky : ''}`} style={{height: "fit-content"}}>
         <Link to="/" className='text-white text-decoration-none p-3 popup-font fw-bolder' ><h2> PF </h2></Link>
@@ -64,20 +72,20 @@ function Navbar() {
                   <img src={menu} />
               </button>
 
-              <div className='offcanvas offcanvas-top bg-white offcanvas-custom-height' tabIndex={-1} id = "offcanvasTop" aria-labelledby='offcanvasTopLabel'>
+              <div ref={offCanvasRef} className='offcanvas offcanvas-top bg-white offcanvas-custom-height' tabIndex={-1} id = "offcanvasTop" aria-labelledby='offcanvasTopLabel'>
+
                 <div className='offcanvas-header px-5'><h3 className=' custom-letter-spacing'>M E N U</h3>
                   <button className='btn-close px-5' data-bs-dismiss='offcanvas' aria-label='close'> </button>
                 </div>
-                <div className="offcanvas-body">
-                  
+
+                <div className="offcanvas-body">                  
                   <div className='d-flex flex-row align-items-center justify-content-center'> 
-                    <div className='d-flex flex-row '>
-                    
+                    <div className='d-flex flex-row '>                    
                       <ul className='list-unstyled text-decoration-none '>
-                        <li><Link to="/home" className='text-decoration-none text-black'><h2 className='display-2 popup-font fw-bolder'>Home</h2></Link></li>
-                        <li><Link to="/projects"  className='text-decoration-none text-black'><h2 className='display-2 popup-font fw-bolder'>Projects</h2></Link></li>
-                        <li><Link to="/about" className='text-decoration-none text-black'><h2 className='display-2 popup-font fw-bolder'>About</h2></Link></li>
-                        <li><Link to="/contact-me" className='text-decoration-none text-black'><h2 className='display-2 popup-font fw-bolder'>Contact</h2></Link></li>
+                        <li><Link to="/home" className='text-decoration-none text-black' onClick={closeCanvas}><h2 className='display-2 popup-font fw-bolder'>Home</h2></Link></li>
+                        <li><Link to="/projects"  className='text-decoration-none text-black' onClick={closeCanvas}><h2 className='display-2 popup-font fw-bolder'>Projects</h2></Link></li>
+                        <li><Link to="/about" className='text-decoration-none text-black' onClick={closeCanvas}><h2 className='display-2 popup-font fw-bolder'>About</h2></Link></li>
+                        <li><Link to="/contact-me" className='text-decoration-none text-black' onClick={closeCanvas}><h2 className='display-2 popup-font fw-bolder'>Contact</h2></Link></li>
                       </ul>
                     </div>                  
                   </div>
